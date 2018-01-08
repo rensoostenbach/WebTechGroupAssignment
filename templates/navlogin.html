@@ -1,0 +1,37 @@
+<!--
+  <!-- Navigation 
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" style="color: white;">Logged in as: {% if current_user.is_authenticated %}
+                 <a class="navbar-brand" style="color: white;">{{ current_user.username }}</a>
+                 <a class="navbar-brand" href="#" style="margin-left: 10px; color: #868e96;">Log out</a>
+                 {% else %}
+                 <a class="navbar-brand" style="color: white;">Not logged in</a>
+                 {% endif %}
+</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="{{ url_for('upload_file') }}">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          {% if not current_user.is_authenticated %}
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Sign up</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Log in</a>
+          </li>
+          {% endif %}
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+-->
